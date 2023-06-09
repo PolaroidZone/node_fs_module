@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: rgb(121, 121, 121);
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .form-input-con{
+            padding-bottom: 20px;
+        }
+
+        .form-header h1{
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .form-input {
+            padding-bottom: 10px;
+        }
+
+        .form-input input{
+            border-radius: 10px;
+            width: 250px;
+            border: none;
+            height: 30px;
+        }
+
+        .form-footer{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .form-footer button{
+            transition: ease-in .2s;
+            width: 150px;
+            border-radius: 10px;
+            border: none;
+            height: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(127, 197, 255);
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transition: ease-in .2s;
+            background-color: rgb(0, 153, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <form action="/send" method="post">
+            <div class="form-input-con">
+                <div class="form-header">
+                <h1>File writer</h1>
+                </div>
+                <div class="form-input">
+                    <input type="text" name="filename" id="filename" placeholder="File name" required>
+                </div>
+                <div class="form-footer">
+                    <button type="submit" name="submit" id="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
